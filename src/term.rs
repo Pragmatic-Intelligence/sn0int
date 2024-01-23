@@ -282,7 +282,7 @@ impl Prompt {
 
 impl fmt::Display for Prompt {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "[sn0int][{}]", self.workspace)?;
+        write!(f, "[prt][{}]", self.workspace)?;
         if let Some(module) = &self.module {
             write!(f, "[{}]", module.canonical())?;
         }
